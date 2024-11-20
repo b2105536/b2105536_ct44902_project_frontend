@@ -36,6 +36,16 @@
                     <i class="fas fa-book-reader"></i>
                 </h4>
                 <BookDetail :book="activeBook" />
+                <router-link
+                    :to="{
+                        name: 'book.edit',
+                        params: { masach: activeBook.MaSach },
+                    }"
+                >
+                    <span class="mt-2 badge badge-warning">
+                        <i class="fas fa-edit"></i> Hiệu chỉnh
+                    </span>
+                </router-link>
             </div>
         </div>
     </div>
