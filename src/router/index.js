@@ -15,10 +15,16 @@ const routes = [
     },
 
     {
-        path: "/book/:masach",
+        path: "/books/:masach",
         name: "book.edit",
         component: () => import("@/views/BookEdit.vue"),
         props: true
+    },
+
+    {
+        path: "/books/add",
+        name: "book.add",
+        component: () => import("@/views/BookAdd.vue"),
     },
 ];
 
