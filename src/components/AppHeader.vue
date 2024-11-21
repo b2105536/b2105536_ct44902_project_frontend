@@ -8,6 +8,13 @@
                     <i class="fas fa-book"></i>
                 </router-link>
             </li>
+
+            <li class="nav-item">
+                <router-link :to="{ name: 'publisher' }" class="nav-link">
+                    Nhà xuất bản
+                    <i class="fas fa-print"></i>
+                </router-link>
+            </li>
         </div>
     </nav>
 </template>

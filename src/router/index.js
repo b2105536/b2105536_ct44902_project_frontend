@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Book from "@/views/Book.vue";
+import Publisher from "@/views/Publisher.vue";
 
 const routes = [
     {
@@ -25,6 +26,25 @@ const routes = [
         path: "/books/add",
         name: "book.add",
         component: () => import("@/views/BookAdd.vue"),
+    },
+
+    {
+        path: "/publisher",
+        name: "publisher",
+        component: Publisher,
+    },
+
+    {
+        path: "/publishers/:manxb",
+        name: "publisher.edit",
+        component: () => import("@/views/PublisherEdit.vue"),
+        props: true
+    },
+
+    {
+        path: "/publishers/add",
+        name: "publisher.add",
+        component: () => import("@/views/PublisherAdd.vue"),
     },
 ];
 
